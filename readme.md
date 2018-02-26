@@ -5,8 +5,11 @@ Wall app backend written with Laravel
 Endpoints
 
 `/post` - `GET`, `POST`
+
 `/post/<post_id>` - `GET`, `POST`, `PUT`
+
 `/register` - `POST`
+
 `/oauth/token` - `POST` (get the `access_token` and send it in a header as `Access: Bearer <token>`
 
 This repo uses Passport. To get the token from `/oauth/token`, you need to create a Password Grant Client by running `php artisan passport:client --password` then hit `/oauth/token` with a `POST` request containing:
